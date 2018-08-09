@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Mariya Kuznetsova](https://up.htmlacademy.ru/htmlcss/22/user/191884).
-* Наставник: `Альбина Токарчук`.
+* Наставник: [Альбина Токарчук](https://htmlacademy.ru/profile/id167491).
 
 ---
 
