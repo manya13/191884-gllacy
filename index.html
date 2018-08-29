@@ -7,11 +7,12 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип GlaccyShop">
+        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Gllacy">
         <ul class="site-navigation">
-          <li><a href="#">Каталог</a>
-            <ul class="site-navigation-level2">
-              <li class="site-navigation-level2-new"><a href="#"><b>Новинки</b></a></li>
+          <li class="site-navigation-current">
+            <a href="#">Каталог</a>
+            <ul class="site-subnavigation">
+              <li class="site-subnavigation-new"><a href="#"><b>Новинки</b></a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лёд</a></li>
@@ -27,13 +28,13 @@
         </div>
         <div class="user-navigation">
           <a class="login-link" href="#">Вход</a>
-        </div>
-        <div class="popup-login">
-          <!-- здесь будет форма -->
-          <ul class="login-link-help">
-            <li><a href="#">Забыли пароль?</a></li>
-            <li><a href="#">Новая регистрация</a></li>
-          </ul>
+          <div class="popup-login">
+            <!-- здесь будет форма -->
+            <ul class="login-link-help">
+              <li><a href="#">Забыли пароль?</a></li>
+              <li><a href="#">Новая регистрация</a></li>
+            </ul>
+          </div>
         </div>
         <div class="main-basket">
           <a class="main-basket-button" href="#">Пусто</a>
@@ -43,7 +44,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">GlaccyShop</h1>
+      <h1 class="visually-hidden">Gllacy</h1>
       <div class="slider">
         <div class="slide">
           <img src="img/index-slider1.svg" width="368" height="153" alt="Мороженое">
@@ -179,9 +180,8 @@
       </div>
     </footer>
     <section class="modal modal-feedback">
-      <p>Мы обязательно вам ответим!</p>
+      <h3>Мы обязательно вам ответим!</h3>
       <!-- Здесь будет форма -->
-      <p><a class="button modal-feedback-button" href="#">Отправить</a></p>
       <span class="modal-close">x</span>
     </section>
   </body>
