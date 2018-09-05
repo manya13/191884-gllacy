@@ -24,12 +24,28 @@
         </ul>
         <div class="main-search">
           <a class="main-search-button" href="#">Поиск</a>
-          <!-- форма -->
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <p>
+              <label class "visually-hidden" for="search-field">Что ищем?</label>
+              <input class="input-field input-field-search" type="text" name="search" id="search-field" placeholder="Что ищем?">
+            </p>
+            <button class="button button-search" type="submit">Найти</button>
+          </form>
         </div>
         <div class="user-navigation">
           <a class="login-link" href="#">Вход</a>
           <div class="popup-login">
-            <!-- здесь будет форма -->
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="login-field">Электронная почта</label>
+                <input class="input-field input-field-login" type="text" name="login" id="login-field" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="password-field">Пароль</label>
+                <input class="input-field input-field-login" type="password" name="password" id="password-field" placeholder="Пароль">
+              </p>
+              <button class="button button-login" type="submit">Войти</button>
+            </form>
             <ul class="login-link-help">
               <li><a href="#">Забыли пароль?</a></li>
               <li><a href="#">Новая регистрация</a></li>
@@ -63,9 +79,9 @@
         </div>
       </div>
       <div>
-        <span class="slider-button"></span>
-        <span class="slider-button"></span>
-        <span class="slider-button"></span>
+        <button class="slider-button">Первый слайд</button>
+        <button class="slider-button">Второй слайд</button>
+        <button class="slider-button">Третий слайд</button>
       </div>
       <section class="promotions">
         <div class="promotions-item">
@@ -141,7 +157,13 @@
       </article>
       <section class="subscription">
         <p class="subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- форма -->
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="subscription-item">
+            <label class "visually-hidden" for="subscription-field">Электронная почта</label>
+            <input class="input-subscription" type="text" name="mail" id="subscription-field" value="" placeholder="Электронная почта">
+          </p>
+          <button class="button button-subscription" type="submit">Отправить</button>
+        </form>
       </section>
       <div>
         <img src="img/map.png" width="1050" height="430" alt="Адрес магазина на карте">
@@ -153,7 +175,7 @@
           <p>Для заказов по телефону:
             <a href="tel:89124502525">8 912 450-25-25</a>
             (с 10 до 20 ежедневно)</p>
-          <a class="button contacts-button" href="contacts.html">Форма обратной связи</a>
+          <a class="button contacts-button" href="#">Форма обратной связи</a>
         </section>
       </div>
     </main>
@@ -181,8 +203,22 @@
     </footer>
     <section class="modal modal-feedback">
       <h3>Мы обязательно вам ответим!</h3>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="feedback-name">Имя</label>
+          <input class="input-field input-field-feedback" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-mail">Почта</label>
+          <input class="input-field input-field-feedback" type="text" name="mail" id="feedback-mail" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-comment">Текст</label>
+          <input class="input-field input-field-feedback-comment" type="text" name="text" id="feedback-text" placeholder="Напишите что-нибудь...">
+        </p>
+        <button class="button button-feedback" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

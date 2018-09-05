@@ -25,12 +25,28 @@
         </ul>
         <div class="main-search">
           <a class="main-search-button" href="#">Поиск</a>
-          <!-- форма -->
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <p>
+              <label class "visually-hidden" for="search-field">Что ищем?</label>
+              <input class="input-field input-field-search" type="text" name="search" id="search-field" placeholder="Что ищем?">
+            </p>
+            <button class="button button-search" type="submit">Найти</button>
+          </form>
         </div>
         <div class="user-navigation">
           <a class="login-link" href="#">Вход</a>
           <div class="popup-login">
-            <!-- здесь будет форма -->
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="login-field">Электронная почта</label>
+                <input class="input-field input-field-login" type="text" name="login" id="login-field" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="password-field">Пароль</label>
+                <input class="input-field input-field-login" type="password" name="password" id="password-field" placeholder="Пароль">
+              </p>
+              <button class="button button-login" type="submit">Войти</button>
+            </form>
             <ul class="login-link-help">
               <li><a href="#">Забыли пароль?</a></li>
               <li><a href="#">Новая регистрация</a></li>
@@ -41,13 +57,13 @@
           <a class="basket-full-button" href="#">2 товара</a>
           <table>
             <tr>
-              <td><span class="basket-full-delete">x</span><td>
+              <td><button class="basket-full-delete" type="button">Удалить</button><td>
               <td><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
               <td><p class="basket-full-weight">1,5кг х <span class="basket-full-price">200 руб.</span></p></td>
               <td><p class="basket-full-cost">300 руб.</p></td>
             </tr>
             <tr>
-              <td><span class="basket-full-delete">x</span><td>
+              <td><button class="basket-full-delete" type="button">Удалить</button><td>
               <td><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
               <td><p class="basket-full-weight">1,5кг х <span class="basket-full-price">300 руб.</span></p></td>
               <td><p class="basket-full-cost">450 руб.</p></td>
@@ -69,7 +85,77 @@
       <h1 class="page-title">Сливочное мороженое</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <select name="sorting">
+              <option value="popular">по популярности</option>
+              <option value="inexpensive">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fatty">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена: 100 руб. - 500 руб.</legend>
+            <label>
+            <input type="range" name="price"> Цена
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-fatty" type="radio" name="product-fat" value="zero-percent">
+                0%</label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-fatty" type="radio" name="product-fat" value="up-to-ten-percent">
+                до 10%</label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-fatty" type="radio" name="product-fat" value="up-to-thirty-percent">
+                до 30%</label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-fatty" type="radio" name="product-fat" value="above-thirty-percent">
+                выше 30%</label>
+              </li>
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-fillers" type="checkbox" name="chocolate">
+                шоколадные</label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-fillers" type="checkbox" name="sugar-powders">
+                сахарные присыпки</label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-fillers" type="checkbox" name="fruit">
+                фрукты</label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-fillers" type="checkbox" name="syrups">
+                сиропы</label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-fillers" type="checkbox" name="jams">
+                джемы</label>
+              </li>
+          </fieldset>
+          <button type="submit" class="filter-button button">Применить</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список видов мороженого</h2>
