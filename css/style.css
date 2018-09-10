@@ -18,13 +18,19 @@ body {
   list-style: none;
 }
 
+.site-navigation-item > a,
+.site-subnavigation-new > a,
+.site-navigation-current > a {
+  font-weight: 700;
+}
+
 .site-navigation a {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid #adbdb4;
 }
 
-.site-navigation a:hover ,
+.site-navigation a:hover,
 .site-navigation a:focus {
   color: #333333;
   background-color: #f7f6f3;
@@ -61,7 +67,7 @@ body {
   background-color: #d07058;
 }
 
-.site-subnavigation a:hover ,
+.site-subnavigation a:hover,
 .site-subnavigation a:focus {
   background-color: #fbded7;
 }
@@ -526,7 +532,7 @@ body {
   text-decoration: none;
 }
 
-.footer-social a:hover ,
+.footer-social a:hover,
 .footer-social a:focus {
   opacity: none;
 }
@@ -549,9 +555,9 @@ body {
   line-height: 18px;
 }
 
-.footer-menu a:hover ,
-.footer-menu a:focus ,
-.footer-copyright a:hover ,
+.footer-menu a:hover,
+.footer-menu a:focus,
+.footer-copyright a:hover,
 .footer-copyright a:focus {
   color: #ffbc9e;
   border-bottom: 1px solid #a7a294;
@@ -618,7 +624,7 @@ body {
   border-bottom: 1px solid #aebeb5;
 }
 
-.breadcrumbs-item a:hover ,
+.breadcrumbs-item a:hover,
 .breadcrumbs-item a:focus {
   color: #ffbc9e;
   border-bottom: 1px solid #a7a294;
@@ -662,7 +668,7 @@ body {
   background-color: #a7b8af;
 }
 
-.filter-button:hover ,
+.filter-button:hover,
 .filter-button:focus {
   color: #323232;
   background-color: #ffffff;
@@ -686,12 +692,12 @@ body {
   line-height: 18px;
 }
 
-.pagination-list-current a {
+.pagination-item-current a {
   color: #323232;
   background-color: #ffffff;
 }
 
-.pagination-list a:hover ,
+.pagination-list a:hover,
 .pagination-list a:focus {
   background-color: #9db1a5;
 }
