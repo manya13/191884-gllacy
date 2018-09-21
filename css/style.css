@@ -56,6 +56,10 @@ textarea:hover  {
   border: 1px solid rgba(154, 154, 154, 0.52);
 }
 
+input:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+
 .button {
   text-decoration: none;
 }
@@ -242,6 +246,11 @@ textarea:hover  {
   background-color: #fbded7;
 }
 
+.site-subnavigation li:hover:last-child {
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
 .site-subnavigation a:active {
   margin: 0;
   padding: 0;
@@ -258,11 +267,12 @@ textarea:hover  {
 
 .site-subnavigation-new {
   position: relative;
+  margin-bottom: 1px;
 }
 
 .site-subnavigation-new a,
 .site-subnavigation-new a:hover {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   padding-top: 2px;
 }
 
@@ -276,11 +286,16 @@ textarea:hover  {
   background-color: #d07058;
 }
 
-.site-subnavigation-new a::after {
+.site-subnavigation-current > a {
+  color: #ffffff;
+}
+
+.site-subnavigation::after {
   content: "";
 
   position: absolute;
-  top: 39px;
+  margin-top: 1px;
+  top: 40px;
   left: 6px;
   width: 128px;
   height: 1px;
@@ -722,6 +737,7 @@ textarea:hover  {
 
 .full-catalog-item {
   margin-bottom: 40px;
+  align-items: center;
 }
 
 .catalog-item-title {
@@ -785,13 +801,15 @@ textarea:hover  {
   min-height: 405px;
   position: absolute;
   left: -13px;
-  align-items: flex-end;
+  align-items: center;
   z-index: 20;
+  margin: 0 auto;
 
-  background-color: rgba(248, 247, 244, 0.2);
-  border: 5px;
+  opacity: 0.2;
+  background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-}
+  border-radius: 5px;
+  }
 
 .catalog-button {
   display: none;
@@ -823,7 +841,7 @@ textarea:hover  {
 .catalog-item:hover .catalog-image,
 .catalog-item:hover .catalog-item-price
  {
-   position: absolute;
+  position: absolute;
   display: block;
   z-index: 400;
 }
@@ -833,6 +851,9 @@ textarea:hover  {
   top: 280px;
   display: block;
   z-index: 400;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .slider {
@@ -1488,6 +1509,7 @@ textarea:hover  {
 }
 
 .filter-sorting-container {
+position: relative;
   margin: 0;
   padding: 0;
 
@@ -1518,7 +1540,40 @@ textarea:hover  {
 }
 
 .sorting {
-  padding: 8px 10px 10px 12px;
+  position: relative;
+  width: 194px;
+  height: 37px;
+  -webkit-appearance: none;
+}
+
+.select-wrapper::before {
+  content: "";
+
+  position: absolute;
+  left: 165px;
+  top: 42px;
+  z-index: 100;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/select-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.select-wrapper:hover::before {
+  content: "";
+
+  position: absolute;
+  left: 165px;
+  top: 42px;
+  z-index: 100;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/select-arrow-black.svg");
+  background-repeat: no-repeat;
 }
 
 .sorting:hover {
