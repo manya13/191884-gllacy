@@ -29,8 +29,31 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-input[placeholder] {
-    padding-left: 15px;
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+textarea:focus  {
+  padding-left: 15px;
+  outline: none;
+  border: 1px solid rgba(154, 154, 154, 0,52);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+textarea:focus  {
+  font-weight: 700;
+  outline: none;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="email"]:hover,
+textarea:hover  {
+  border: 1px solid rgba(154, 154, 154, 0.52);
 }
 
 .button {
@@ -138,9 +161,7 @@ input[placeholder] {
 
 .site-navigation-item {
   margin: 0;
-  padding: 0;
-  padding-top: 13px;
-  padding-bottom: 14px;
+  padding: 13px 0px 14px 0px;
 }
 
 .site-navigation-item a:hover,
@@ -178,7 +199,6 @@ input[placeholder] {
   min-width: 143px;
   margin: 0;
   padding: 0;
-  padding-bottom: 7px;
   z-index: 50;
 
   border-radius: 5px;
@@ -194,9 +214,7 @@ input[placeholder] {
 .site-subnavigation li {
   display: flex;
   align-items: center;
-  padding-bottom: 7px;
-  padding-top: 7px;
-  padding-left: 21px;
+  padding: 7px 0px 9px 21px;
 }
 
 .site-subnavigation a {
@@ -219,9 +237,7 @@ input[placeholder] {
 
 .site-subnavigation li:hover,
 .site-subnavigation li:focus {
-  padding-bottom: 7px;
-  padding-top: 7px;
-  padding-left: 21px;
+  padding: 7px 0px 9px 21px;
 
   background-color: #fbded7;
 }
@@ -235,9 +251,7 @@ input[placeholder] {
 }
 
 .site-subnavigation li:active {
-  padding-bottom: 7px;
-  padding-top: 7px;
-  padding-left: 21px;
+  padding: 7px 0px 9px 21px;
 
   background-color: #f6b5a5;
 }
@@ -272,6 +286,10 @@ input[placeholder] {
   height: 1px;
 
   background: rgba(173, 189, 180, 0.5);
+}
+
+.site-subnavigation-current {
+  pointer-events: none;
 }
 
 .header-right-wrapper {
@@ -690,6 +708,7 @@ input[placeholder] {
 .catalog-item-hit::after {
   content: "";
 
+  z-index: 400;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -767,9 +786,11 @@ input[placeholder] {
   position: absolute;
   left: -13px;
   align-items: flex-end;
-  z-index: 200;
+  z-index: 20;
 
   background-color: rgba(248, 247, 244, 0.2);
+  border: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .catalog-button {
@@ -797,6 +818,21 @@ input[placeholder] {
 .catalog-item:hover .catalog-button {
   display: block;
   z-index: 500;
+}
+
+.catalog-item:hover .catalog-image,
+.catalog-item:hover .catalog-item-price
+ {
+   position: absolute;
+  display: block;
+  z-index: 400;
+}
+
+.catalog-item:hover .catalog-item-title {
+  position: absolute;
+  top: 280px;
+  display: block;
+  z-index: 400;
 }
 
 .slider {
@@ -930,9 +966,7 @@ input[placeholder] {
 }
 
 .promotions-item-present {
-  margin: 0;
-  margin-bottom: 14px;
-  margin-top: 18px;
+  margin: 18px 0px 14px 0px;
   padding: 0;
 }
 
@@ -982,6 +1016,7 @@ input[placeholder] {
 }
 
 .promotions-raspberry {
+  background-color: #b42a52;
   background-image: url("../img/raspberries_background.jpg");
   background-position: center;
 }
@@ -1003,7 +1038,7 @@ input[placeholder] {
 .promotions-chocolate {
   color: #ffffff;
 
-  background-color: #849d8f;
+  background-color: #814d2c;
   background-image: url("../img/choco_background.jpg");
   background-position: center;
 }
@@ -1023,12 +1058,12 @@ input[placeholder] {
 }
 
 .advantages {
-  padding: 18px 0px 26px 21px;
+  padding: 20px 0px 29px 21px;
   margin-bottom: 40px;
 
   color: #323232;
 
-  background-color: #849d8f;
+  background-color: #efe3cb;
   background-image: url("../img/waffle_pattern.jpg");
   background-position: 0 0;
   border-radius: 15px;
@@ -1036,9 +1071,7 @@ input[placeholder] {
 
 .advantages-title {
   width: 1020px;
-  margin: 0;
-  margin-top: 8px;
-  margin-bottom: 1px;
+  margin: 8px 0px 1px 0px;
   padding: 0;
 
   font-size: 24px;
@@ -1060,9 +1093,7 @@ input[placeholder] {
 .advantages-item {
   position: relative;
   width: 487px;
-  margin: 0;
-  margin-left: 56px;
-  margin-top: 20px;
+  margin: 20px 0px 0px 56px;
   padding: 0;
 }
 
@@ -1150,16 +1181,15 @@ input[placeholder] {
 }
 
 .blog {
-  width: 560px;
+  width: 540px;
   margin: 0;
-  padding: 0;
-  padding-left: 20px;
-  padding-top: 23px;
+  padding: 23px 0px 0px 20px;
 
-  background-color: #849d8f;
+  background-color: #ffffff;
   background-image: url("../img/strawberry_background.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  border-radius: 10px;
 }
 
 .blog-title {
@@ -1270,6 +1300,10 @@ input[placeholder] {
   padding: 0;
 }
 
+.contacts p:first-child {
+  margin-bottom: 4px;
+}
+
 .contacts-information iframe{
   position: relative;
   z-index: 100;
@@ -1278,7 +1312,6 @@ input[placeholder] {
 }
 
 .map {
-  display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
@@ -1314,7 +1347,7 @@ input[placeholder] {
   display: block;
   width: 222px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -1326,6 +1359,7 @@ input[placeholder] {
 
 .contacts-telephone-link a {
   display: block;
+  margin-bottom: 3px;
 
   font-size: 18px;
   font-weight: 700;
@@ -1354,13 +1388,23 @@ input[placeholder] {
   cursor: pointer;
 }
 
+.header-catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  vertical-align: bottom;
+  margin-bottom: 5px;
+}
+
 .breadcrumbs,
 .breadcrumbs a {
   display: flex;
   justify-content: flex-start;
+  vertical-align: bottom;
+
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 10px;
+  margin-top: 13px;
   padding: 0;
 
   list-style: none;
@@ -1385,7 +1429,7 @@ input[placeholder] {
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 18px;
   right: -15px;
 
   width: 6px;
@@ -1411,7 +1455,7 @@ input[placeholder] {
 
 .page-title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   padding: 0;
 
   font-size: 35px;
@@ -1422,7 +1466,7 @@ input[placeholder] {
 
 .filters {
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -1452,7 +1496,7 @@ input[placeholder] {
 
 .filter legend {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   padding: 0;
   padding-left: 16px;
 }
@@ -1666,10 +1710,11 @@ input[placeholder] {
   left: -35px;
   top: -2px;
 
-  width: 24px;
+  width: 20px;
   height: 20px;
 
   background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
   opacity: 0.8;
 }
 
@@ -1719,9 +1764,11 @@ input[placeholder] {
 .pagination-list {
   display: flex;
   width: 191px;
+  justify-content: space-between;
   margin: 0;
   margin-left: auto;
   padding: 0;
+  padding-top: 5px;
 
   list-style: none;
 }
@@ -1758,6 +1805,11 @@ input[placeholder] {
   padding: 0;
 }
 
+.pagination-item-current,
+.pagination-item-back {
+  pointer-events: none;
+}
+
 .pagination-item-current a {
   color: #323232;
 
@@ -1765,7 +1817,7 @@ input[placeholder] {
 }
 
 .main-footer {
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 .main-footer a {
@@ -1781,6 +1833,7 @@ input[placeholder] {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding-bottom: 15px;
 }
 
 .catalog-footer-container {
@@ -1828,6 +1881,7 @@ input[placeholder] {
   width: 304px;
   margin: 0;
   padding: 0;
+  padding-left: 5px;
 
   list-style: none;
   opacity: 0.8;
@@ -1863,8 +1917,8 @@ input[placeholder] {
   content: "";
 
   position: absolute;
-  top: 4px;
-  left: -22px;
+  top: 6px;
+  left: -15px;
   width: 15px;
   height: 13px;
 
@@ -1879,6 +1933,7 @@ input[placeholder] {
 
 .footer-copyright {
   width: 190px;
+  margin-bottom: 15px;
 }
 
 .footer-copyright-link {
@@ -1920,7 +1975,7 @@ input[placeholder] {
 
 .modal {
   position: fixed;
-  z-index: 110;
+  z-index: 700;
 }
 
 .modal-show {
@@ -1980,9 +2035,7 @@ input[placeholder] {
   height: 140px;
   margin: 0;
   margin-bottom: 20px;
-  padding: 0;
-  padding-top: 13px;
-  padding-left: 15px;
+  padding: 13px 0px 0px 15px;
 
   border: 1px solid rgba(178, 178, 178, 0.52);
   background-color: #ffffff;
@@ -2005,12 +2058,23 @@ input[placeholder] {
   border-radius: 50px;
 }
 
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  width: 17px;
+  height: 17px;
+  background-color: #f8f7f4;
+  border: 0;
+  cursor: pointer;
+}
+
 .modal-close::before {
   content: "";
 
   position: absolute;
-  top: 18px;
-  right: 15px;
+  top: 0px;
+  right: 0px;
   z-index: 100;
   width: 18px;
   height: 17px;

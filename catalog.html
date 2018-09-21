@@ -12,11 +12,11 @@
       <nav class="main-navigation">
         <div class="main-navigation-container">
           <a class="main-header-logo" href="index.html">
-            <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy">
+            <img src="img/glassy_logo.svg" width="154" height="64" alt="Логотип Gllacy">
           </a>
           <ul class="site-navigation">
             <li class="site-navigation-current site-navigation-item site-subnavigation-open">
-              <a class="site-navigation-item-link one" href="#">Каталог</a>
+              <a class="site-navigation-item-link" href="#">Каталог</a>
               <ul class="popup site-subnavigation">
                 <li class="site-subnavigation-new"><a href="#">Новинки</a></li>
                 <li class="site-subnavigation-current"><a>Сливочное</a></li>
@@ -67,9 +67,11 @@
                 <table class="basket-full-item">
                   <tr>
                     <td width="25">
-                      <button class="basket-full-delete" type="button"><span class="visually-hidden">Удалить</span>
+                      <button class="basket-full-delete" type="button">
+                        <span class="visually-hidden">Удалить</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
-                      </button><td>
+                      </button>
+                    <td>
                     <td width="47"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                     <td width="220">Пломбир с апельсиновым джемом</td>
                     <td class="basket-full-weight" width="151" align="center">1,5 кг х <span class="basket-full-price">200 руб.</span></td>
@@ -92,18 +94,20 @@
             </div>
           </div>
         </div>
-        <div class="main-bottom-container">
-          <p class="main-schedule">С 10 до 20, ежедневно</p>
-          <p class="main-phone"><a href="tel:89124502525">8 912 450-25-25</a></p>
+        <div class="header-catalog-wrapper">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+            <li class="breadcrumbs-current"><a>Сливочное</a></li>
+          </ul>
+          <div class="main-bottom-container">
+            <p class="main-schedule">С 10 до 20, ежедневно</p>
+            <p class="main-phone"><a href="tel:89124502525">8 912 450-25-25</a></p>
+          </div>
         </div>
       </nav>
     </header>
     <main class="container wrapper-page">
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
-        <li class="breadcrumbs-current"><a>Сливочное</a></li>
-      </ul>
       <h1 class="page-title">Сливочное мороженое</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -275,7 +279,7 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li><a href="#"> < </a></li>
+          <li class="pagination-item-back"><a href="#"> < </a></li>
           <li class="pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>

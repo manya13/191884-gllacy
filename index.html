@@ -15,7 +15,7 @@
       <header class="main-header wrapper-page">
         <nav class="main-navigation">
           <div class="main-navigation-container">
-            <img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy">
+            <img class="main-header-logo" src="img/glassy_logo.svg" width="154" height="64" alt="Логотип Gllacy">
             <ul class="site-navigation">
               <li class="site-navigation-item site-subnavigation-open">
                 <a class="site-navigation-item-link" href="#">Каталог</a>
@@ -114,7 +114,7 @@
             <h2 class="visually-hidden">Выбор покупателей</h2>
             <ul class="catalog-list">
               <li class="catalog-item catalog-item-hit">
-                <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
+                <img class="catalog-image" src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
                 <p class="catalog-item-price">310&#8381;<span class="catalog-item-weight">/кг</span></p>
                 <h3 class="catalog-item-title">
                   <a href="description-orange.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -122,7 +122,7 @@
                 <p class="catalog-quickview"><a class="button catalog-button" href="#">Быстрый просмотр</a></p>
               </li>
               <li class="catalog-item catalog-item-hit">
-                <img src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное">
+                <img class="catalog-image" src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное">
                 <p class="catalog-item-price">380&#8381;<span class="catalog-item-weight">/кг</span></p>
                 <h3 class="catalog-item-title">
                   <a href="description-coffee.html">Сливочно-кофейное с кусочками шоколада</a>
@@ -130,7 +130,7 @@
                 <p class="catalog-quickview"><a class="button catalog-button" href="#">Быстрый просмотр</a></p>
               </li>
               <li class="catalog-item catalog-item-hit">
-                <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное">
+                <img class="catalog-image" src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное">
                 <p class="catalog-item-price">355&#8381;<span class="catalog-item-weight">/кг</span></p>
                 <h3 class="catalog-item-title">
                   <a href="description-strawberry.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -138,7 +138,7 @@
                 <p class="catalog-quickview"><a class="button catalog-button" href="#">Быстрый просмотр</a></p>
               </li>
               <li class="catalog-item catalog-item-hit">
-                <img src="img/brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле">
+                <img class="catalog-image" src="img/brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле">
                 <p class="catalog-item-price">415&#8381;<span class="catalog-item-weight">/кг</span></p>
                 <h3 class="catalog-item-title">
                   <a href="description-brulee.html">Сливочное крем-брюле с карамельной подливкой</a>
@@ -187,19 +187,17 @@
         <div class="contacts-information">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="430" allowfullscreen></iframe>
           <img class="map" src="img/map.png" width="1200" height="430" alt="Адрес магазина на карте">
-          <div>
-            <section class="contacts">
-              <p>Адрес главного офиса
-              и офлайн-магазина:
-              <b class="contacts-address">ул.Большая Конюшенная
-              19/8, Санкт-Петербург</b>
-              Для заказов по телефону:</p>
-              <p class="contacts-telephone-link">
-                <a href="tel:88124502525">8 812 450-25-25</a>
-                (с 10 до 20 ежедневно)</p>
-              <a class="button contacts-button" href="contacts.html">Форма обратной связи</a>
-            </section>
-          </div>
+          <section class="contacts">
+            <p>Адрес главного офиса
+            и офлайн-магазина:
+            <b class="contacts-address">ул.Большая Конюшенная
+            19/8, Санкт-Петербург</b>
+            Для заказов по телефону:</p>
+            <p class="contacts-telephone-link">
+              <a href="tel:88124502525">8 812 450-25-25</a>
+              (с 10 до 20 ежедневно)</p>
+            <a class="button contacts-button" href="contacts.html">Форма обратной связи</a>
+          </section>
         </div>
       </main>
       <footer class="main-footer wrapper-page">
@@ -248,19 +246,19 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="feedback-name">Имя</label>
-          <input class="feedback-field" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+          <input class="feedback-field" type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-mail">Почта</label>
-          <input class="feedback-field" type="email" name="mail" id="feedback-mail" placeholder="Ваша почта для ответа?">
+          <input class="feedback-field" type="email" name="feedback-mail" id="feedback-mail" placeholder="Ваша почта для ответа?">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-comment">Текст</label>
-          <textarea class="feedback-field-comment" name="text" id="feedback-comment" rows="">Напишите что-нибудь...</textarea>
+          <textarea class="feedback-field-comment" name="feedback-text" id="feedback-comment" rows="">Напишите что-нибудь...</textarea>
         </p>
         <button class="button button-feedback" type="submit">Отправить</button>
+        <button class="modal-close " type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
-      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть<span></button>
     </section>
     <script>
       var link = document.querySelector(".contacts-button");
