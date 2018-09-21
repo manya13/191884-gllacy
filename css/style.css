@@ -312,8 +312,8 @@ textarea:hover  {
 
 .header-search {
   position: relative;
-  padding-top: 17px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 18px;
 }
 
 .search-form {
@@ -327,7 +327,7 @@ textarea:hover  {
 .header-search-button {
   display: block;
   padding: 8px;
-  padding-bottom: 2px;
+  padding-bottom: 6px;
   margin: 0;
 
   background-color: #a1b4a9;
@@ -369,13 +369,13 @@ textarea:hover  {
   display: flex;
   position: relative;
   align-items: center;
-  padding-top: 17px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 18px;
 }
 
 .login-link {
   display: block;
-  padding: 8px 17px 7px 44px;
+  padding: 8px 18px 9px 44px;
   margin: 0;
   text-decoration: none;
   color: #ffffff;
@@ -388,8 +388,8 @@ textarea:hover  {
   content: "";
 
   position: absolute;
-  top: 22px;
-  left: 16px;
+  top: 20px;
+  left: 17px;
   width: 21px;
   height: 19px;
 
@@ -497,8 +497,8 @@ textarea:hover  {
   display: flex;
   position: relative;
   align-items: center;
-  padding-top: 17px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 18px;
 
   font-size: 14px;
   font-weight: 500;
@@ -506,7 +506,7 @@ textarea:hover  {
 }
 
 .main-basket-button {
-  padding: 9px 17px 8px 45px;
+  padding: 9px 17px 9px 45px;
   margin: 0;
 
   text-decoration: none;
@@ -520,8 +520,8 @@ textarea:hover  {
   content: "";
 
   position: absolute;
-  top: 23px;
-  left: 16px;
+  top: 22px;
+  left: 17px;
   width: 21px;
   height: 20px;
 
@@ -541,8 +541,8 @@ textarea:hover  {
 
 .basket-full {
   position: relative;
-  padding-top: 17px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 18px;
 }
 
 .basket-full a {
@@ -730,7 +730,7 @@ textarea:hover  {
 
   font-size: 17px;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 21.5px;
   text-align: center;
   color: #ffffff;
 }
@@ -966,19 +966,19 @@ textarea:hover  {
 }
 
 .promotions-item-present {
-  margin: 18px 0px 14px 0px;
+  margin: 17px 0px 16px 0px;
   padding: 0;
 }
 
 .promotions-item-conditions {
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
   padding: 0;
 }
 
 .promotions-item-button {
   display: inline-block;
-  padding: 12px 24px 11px 22px;
+  padding: 11px 24px 12px 22px;
   margin: 0;
   margin-left:auto;
   margin-bottom: 22px;
@@ -1093,13 +1093,13 @@ textarea:hover  {
 .advantages-item {
   position: relative;
   width: 487px;
-  margin: 20px 0px 0px 56px;
+  margin: 21px 0px 0px 56px;
   padding: 0;
 }
 
 .advantages-item .advantages-icon-cow,
 .advantages-item .advantages-icon-thermometer {
-  width: 487px;
+  width: 480px;
 }
 
 .advantages-item p {
@@ -1264,7 +1264,7 @@ textarea:hover  {
 }
 
 .field-subscription {
-  width: 366px;
+  width: 351px;
   height: 42px;
 
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -1326,7 +1326,7 @@ textarea:hover  {
   flex-direction: column;
   margin: 0;
   margin-left: auto;
-  padding: 32px 25px 31px;
+  padding: 30px 25px 31px;
   z-index: 110;
 
   font-size: 14px;
@@ -1498,14 +1498,14 @@ textarea:hover  {
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
-  padding-left: 16px;
+  padding-left: 18px;
 }
 
 .sorting,
 .range-controls,
 .filter-fatty-list,
 .filter-fillers-list {
-  padding: 8px 8px 8px 14px;
+  padding: 8px 8px 8px 12px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1515,6 +1515,10 @@ textarea:hover  {
 
   border: none;
   border-radius: 50px;
+}
+
+.sorting {
+  padding: 8px 10px 10px 12px;
 }
 
 .sorting:hover {
@@ -1554,22 +1558,22 @@ textarea:hover  {
 
 .range-toggle {
   position: absolute;
-  top: 11px;
+  top: 9px;
 
-  width: 3px;
-  height: 3px;
+  width: 5px;
+  height: 5px;
 
   background: #9db1a5;
-  border: 6px solid #ffffff;
+  border: 8px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
 
-  border: 7px solid #ffffff;
+  border: 9px solid #ffffff;
 }
 
 .range-toggle-min {
@@ -1577,7 +1581,7 @@ textarea:hover  {
 }
 
 .range-toggle-max {
-  left: 150px;
+  left: 135px;
 }
 
 .filter-option label {
@@ -1664,8 +1668,13 @@ textarea:hover  {
   width: 702px;
   margin: 0;
   padding: 0;
+  margin-top: -3px;
 
   border: none;
+}
+
+.filter-fillers-container legend {
+  margin-bottom: 5px;
 }
 
 .filter-fillers-list {
@@ -1673,7 +1682,7 @@ textarea:hover  {
   justify-content: space-between;
   list-style: none;
   margin: 0;
-  padding: 11px 12px 10px 48px;
+  padding: 12px 13px 10px 50px;
 }
 
 .filter-fillers + label::before {
@@ -1735,7 +1744,7 @@ textarea:hover  {
 .filter-button {
   width: 144px;
   height: 37px;
-  margin-top: 21px;
+  margin-top: 18px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1848,6 +1857,7 @@ textarea:hover  {
   width: 185px;
   margin: 0 auto;
   padding: 0;
+  padding-bottom: 2px;
 
   list-style: none;
 }
@@ -1880,11 +1890,16 @@ textarea:hover  {
   justify-content: space-between;
   width: 304px;
   margin: 0;
+  margin-bottom: 8px;
   padding: 0;
   padding-left: 5px;
 
   list-style: none;
   opacity: 0.8;
+}
+
+.footer-menu li {
+  padding-bottom: 2px;
 }
 
 .footer-menu a {
@@ -1918,7 +1933,7 @@ textarea:hover  {
 
   position: absolute;
   top: 6px;
-  left: -15px;
+  left: -17px;
   width: 15px;
   height: 13px;
 
