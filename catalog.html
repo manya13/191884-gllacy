@@ -16,7 +16,7 @@
           </a>
           <ul class="site-navigation">
             <li class="site-navigation-current site-navigation-item site-subnavigation-open">
-              <a class="site-navigation-item-link" href="#">Каталог</a>
+              <a class="site-navigation-item-link one" href="#">Каталог</a>
               <ul class="popup site-subnavigation">
                 <li class="site-subnavigation-new"><a href="#">Новинки</a></li>
                 <li class="site-subnavigation-current"><a>Сливочное</a></li>
@@ -65,15 +65,21 @@
               <a class="basket-full-button" href="#">2 товара</a>
               <div class="popup basket-full-list">
                 <table class="basket-full-item">
-                  <tr class="one">
-                    <td width="25"><button class="basket-full-delete visually-hidden" type="button">Удалить</button><td>
+                  <tr>
+                    <td width="25">
+                      <button class="basket-full-delete" type="button"><span class="visually-hidden">Удалить</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+                      </button><td>
                     <td width="47"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                     <td width="220">Пломбир с апельсиновым джемом</td>
                     <td class="basket-full-weight" width="151" align="center">1,5 кг х <span class="basket-full-price">200 руб.</span></td>
                     <td class="basket-full-cost">300 руб.</td>
                   </tr>
                   <tr>
-                    <td><button class="basket-full-delete visually-hidden" type="button">Удалить</button><td>
+                    <td>
+                      <button class="basket-full-delete" type="button"><span class="visually-hidden">Удалить</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+                      </button><td>
                     <td><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
                     <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                     <td class="basket-full-weight" align="center">1,5 кг х <span class="basket-full-price">300 руб.</span></td>
@@ -81,7 +87,7 @@
                   </tr>
                 </table>
                 <p><b>Итого: 750 руб.</b></p>
-                <p class="checkout-button"><a class="checkout-button" href="#">Оформить заказ</a></p>
+                <p class="checkout-button"><a class="button" href="#">Оформить заказ</a></p>
               </div>
             </div>
           </div>
@@ -269,8 +275,8 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item"><a href="#"> < </a></li>
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li><a href="#"> < </a></li>
+          <li class="pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">4</a></li>

@@ -185,15 +185,17 @@
           </div>
         </div>
         <div class="contacts-information">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="430" allowfullscreen></iframe>
           <img class="map" src="img/map.png" width="1200" height="430" alt="Адрес магазина на карте">
-          <div class="wrapper-page">
+          <div>
             <section class="contacts">
               <p>Адрес главного офиса
               и офлайн-магазина:
               <b class="contacts-address">ул.Большая Конюшенная
               19/8, Санкт-Петербург</b>
               Для заказов по телефону:</p>
-              <p class="contacts-telephone-link"><a href="tel:88124502525">8 812 450-25-25</a>
+              <p class="contacts-telephone-link">
+                <a href="tel:88124502525">8 812 450-25-25</a>
                 (с 10 до 20 ежедневно)</p>
               <a class="button contacts-button" href="contacts.html">Форма обратной связи</a>
             </section>
@@ -240,25 +242,63 @@
           </div>
         </div>
       </footer>
-      <section class="modal modal-feedback">
-        <h3>Мы обязательно вам ответим!</h3>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="feedback-name">Имя</label>
-            <input class="feedback-field" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
-          </p>
-          <p>
-            <label class="visually-hidden" for="feedback-mail">Почта</label>
-            <input class="feedback-field" type="email" name="mail" id="feedback-mail" placeholder="Ваша почта для ответа?">
-          </p>
-          <p>
-            <label class="visually-hidden" for="feedback-comment">Текст</label>
-            <textarea class="feedback-field-comment" name="text" id="feedback-comment" rows="">Напишите что-нибудь...</textarea>
-          </p>
-          <button class="button button-feedback" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
     </div>
+    <section class="modal modal-feedback">
+      <h3>Мы обязательно вам ответим!</h3>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="feedback-name">Имя</label>
+          <input class="feedback-field" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-mail">Почта</label>
+          <input class="feedback-field" type="email" name="mail" id="feedback-mail" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-comment">Текст</label>
+          <textarea class="feedback-field-comment" name="text" id="feedback-comment" rows="">Напишите что-нибудь...</textarea>
+        </p>
+        <button class="button button-feedback" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть<span></button>
+    </section>
+    <script>
+      var link = document.querySelector(".contacts-button");
+
+      var popup = document.querySelector(".modal-feedback");
+      var close = popup.querySelector(".modal-close");
+
+      var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=login]");
+      var email = popup.querySelector("[name=mail]");
+
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        login.focus();
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if (!login.value || !email.value) {
+          evt.preventDefault();
+          console.log("Для отправки сообщения неободимо заполнить все поля");
+        }
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
