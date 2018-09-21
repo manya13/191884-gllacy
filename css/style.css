@@ -687,7 +687,7 @@ input[placeholder] {
   border-radius: 100%;
 }
 
-.catalog-item-hit::before {
+.catalog-item-hit::after {
   content: "";
 
   position: absolute;
@@ -796,7 +796,7 @@ input[placeholder] {
 
 .catalog-item:hover .catalog-button {
   display: block;
-  z-index: 100;
+  z-index: 500;
 }
 
 .slider {
