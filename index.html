@@ -38,7 +38,7 @@
                 <form class="popup search-form" action="https://echo.htmlacademy.ru" method="get">
                   <p>
                     <label class="visually-hidden" for="search-field">Что ищем?</label>
-                    <input class="field-search" type="search" name="search" id="search-field" placeholder="Что ищем?">
+                    <input class="field-search field-form" type="search" name="search" id="search-field" placeholder="Что ищем?">
                   </p>
                   <button class="button button-search visually-hidden" type="submit">Найти</button>
                 </form>
@@ -49,11 +49,11 @@
                   <form class="popup login-form" action="https://echo.htmlacademy.ru" method="post">
                     <p>
                       <label class="visually-hidden" for="login-field">Электронная почта</label>
-                      <input class="field-login" type="email" name="login" id="login-field" placeholder="Электронная почта">
+                      <input class="field-login field-form" type="email" name="login" id="login-field" placeholder="Электронная почта">
                     </p>
                     <p>
                       <label class="visually-hidden" for="password-field">Пароль</label>
-                      <input class="field-login" type="password" name="password" id="password-field" placeholder="Пароль">
+                      <input class="field-login field-form" type="password" name="password" id="password-field" placeholder="Пароль">
                     </p>
                     <button class="button button-login" type="submit">Войти</button>
                   </form>
@@ -154,10 +154,10 @@
                 <p class="advantages-icon-ice-cream">Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</p>
               </li>
               <li class="advantages-item">
-                <p class="advantages-icon-cow">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
+                <p class="advantages-icon-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
               </li>
               <li class="advantages-item">
-                <p class="advantages-icon-eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья</p>
+                <p class="advantages-icon-eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
               </li>
               <li class="advantages-item">
                 <p class="advantages-icon-thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
@@ -176,7 +176,7 @@
                 <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
                   <p class="subscription-item">
                     <label class="visually-hidden" for="subscription-field">Электронная почта</label>
-                    <input class="field-subscription" type="email" name="mail" id="subscription-field" placeholder="Электронная почта">
+                    <input class="field-subscription field-form" type="email" name="mail" id="subscription-field" placeholder="Электронная почта">
                   </p>
                   <button class="button button-subscription" type="submit">Отправить</button>
                 </form>
@@ -241,20 +241,21 @@
         </div>
       </footer>
     </div>
+    <div class="feedback-overlay"></div>
     <section class="modal modal-feedback">
       <h3>Мы обязательно вам ответим!</h3>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="feedback-name">Имя</label>
-          <input class="feedback-field" type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
+          <input class="feedback-field field-form" type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-mail">Почта</label>
-          <input class="feedback-field" type="email" name="feedback-mail" id="feedback-mail" placeholder="Ваша почта для ответа?">
+          <input class="feedback-field field-form" type="email" name="feedback-mail" id="feedback-mail" placeholder="Ваша почта для ответа?">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-comment">Текст</label>
-          <textarea class="feedback-field-comment" name="feedback-text" id="feedback-comment" rows="">Напишите что-нибудь...</textarea>
+          <textarea class="feedback-field-comment field-form" name="feedback-text" id="feedback-comment" rows="" placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <button class="button button-feedback" type="submit">Отправить</button>
         <button class="modal-close " type="button"><span class="visually-hidden">Закрыть</span></button>

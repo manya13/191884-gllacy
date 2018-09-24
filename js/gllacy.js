@@ -1,24 +1,27 @@
-
-
 var link = document.querySelector(".contacts-button");
 
 var popup = document.querySelector(".modal-feedback");
+
+var overlay = document.querySelector(".feedback-overlay");
+
 var close = popup.querySelector(".modal-close");
 
-var form = popup.querySelector("form");
-var login = popup.querySelector("[name=feedback-name]");
+var form = popup.querySelector(".feedback-form");
+var name = popup.querySelector("[name=feedback-name]");
 var email = popup.querySelector("[name=feedback-mail]");
-
+var comment = popup.querySelector("[name=feedback-text]");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  login.focus();
+  overlay.classList.add("feedback-overlay-show");
+  name.focus();
 });
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  overlay.classList.remove("feedback-overlay-show");
 });
 
 form.addEventListener("submit", function (evt) {
