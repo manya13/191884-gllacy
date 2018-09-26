@@ -7,7 +7,7 @@ var overlay = document.querySelector(".feedback-overlay");
 var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector(".feedback-form");
-var name = popup.querySelector("[name=feedback-name]");
+var username = popup.querySelector("[name=feedback-name]");
 var email = popup.querySelector("[name=feedback-mail]");
 var comment = popup.querySelector("[name=feedback-text]");
 
@@ -25,7 +25,7 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!login.value || !email.value) {
+  if (!username.value || !email.value) {
     evt.preventDefault();
     console.log("Для отправки сообщения неободимо заполнить все поля");
   }
